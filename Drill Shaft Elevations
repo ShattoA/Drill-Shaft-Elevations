@@ -1,0 +1,227 @@
+Sub save_prelim()
+'
+' save_prelim Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("O11:O14").Select
+    Selection.copy
+    Range("P11").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("O17:O18").Select
+    Application.CutCopyMode = False
+    Selection.copy
+    Range("P17").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("P11:P14,P17:P18").Select
+    Range("P17").Activate
+    Application.CutCopyMode = False
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub reset_prelim()
+'
+' reset_prelim Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("P11:P14,P17:P18").Select
+    Range("P17").Activate
+    Selection.Clear
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub Save_Second()
+'
+' Save_Second Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("O21").Select
+    Selection.copy
+    Range("P21").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("O24").Select
+    Application.CutCopyMode = False
+    Selection.copy
+    Range("P24").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("P21,P24").Select
+    Range("P24").Activate
+    Application.CutCopyMode = False
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub Reset_Second()
+'
+' Reset_Second Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("P21,P24").Select
+    Range("P24").Activate
+    Selection.Clear
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub Save_final()
+'
+' Save_final Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("O27").Select
+    Selection.copy
+    Range("P27").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("O30:O32").Select
+    Application.CutCopyMode = False
+    Selection.copy
+    Range("P30").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("P27,P30:P32").Select
+    Range("P30").Activate
+    Application.CutCopyMode = False
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlMedium
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub reset_final()
+'
+' reset_final Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("P27,P30:P32").Select
+    Range("P30").Activate
+    Selection.Clear
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
+Sub Save_new_sheet()
+'
+' Save_new_sheet Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Range("N29:O32").Select
+    Selection.copy
+    Sheets.Add After:=ActiveSheet
+    ActiveSheet.Paste
+    Columns("A:A").ColumnWidth = 44.29
+    Sheets("Drill Shaft Elevations").Select
+    Range("P10").Select
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+    
+End Sub
+Sub Copy_new_sheet()
+'
+' Copy_new_sheet Macro
+'
+
+'
+    ActiveSheet.Unprotect
+    Sheets("Drill Shaft Elevations").Select
+    ActiveSheet.Buttons.Add(463.5, 186.75, 326.25, 21.75).Select
+    ActiveSheet.Buttons.Add(462.75, 311.25, 326.25, 26.25).Select
+    ActiveSheet.Buttons.Add(463.5, 425.25, 327, 23.25).Select
+    ActiveSheet.Buttons.Add(462.75, 30.75, 129.75, 46.5).Select
+    ActiveSheet.Buttons.Add(617.25, 31.5, 128.25, 42.75).Select
+    Sheets("Drill Shaft Elevations").copy Before:=Sheets(1)
+    Range("O11:O14,O17:O18,O21,O24,O27,O30:O32").Select
+    Range("O30").Activate
+    Selection.ClearContents
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+    Sheets("Drill Shaft Elevations").Select
+    ActiveSheet.protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+End Sub
