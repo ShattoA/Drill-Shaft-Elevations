@@ -1,0 +1,70 @@
+Sub delete_left_cells()
+'
+' delete_left_cells Macro
+'
+
+'
+    Range("F7").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("F14").Select
+    ActiveCell.FormulaR1C1 = "0"
+End Sub
+Sub delete_right_cells()
+'
+' delete_right_cells Macro
+'
+
+'
+    Range("O7").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("O14").Select
+    ActiveCell.FormulaR1C1 = "0"
+End Sub
+Sub Run()
+'
+' Run Macro
+'
+
+'
+    Range("X12").Select
+    Selection.Copy
+    Range("B20").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+End Sub
+Sub Reset()
+'
+' Reset Macro
+'
+
+'
+End Sub
+Sub Reset_Cells()
+'
+' Reset_Cells Macro
+'
+
+'
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "4"
+    Range("B14").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("D12").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("F7").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("J10").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("J14").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("F14").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("O14").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("R12").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("O7").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("B20").Select
+    ActiveCell.FormulaR1C1 = "0"
+End Sub
